@@ -13,9 +13,9 @@ Before the modern coding editors and cloud-based IDES, software engineers wrote 
 
 ## 📝 Activity
 
- Complete the following activity to practice using the vi coding environment. A brief reference guide is also provided at the bottom of this document.
+ Complete the following activities to practice using the vi coding environment. A brief reference guide is also provided at the bottom of this document.
 
-> **`vi`**
+##### **vi Practice**
 
 1. Open the terminal in the VS code editor (Select "Terminal" in the bottom panel or press **Ctrl+Shift+`**)
 2. Type "vi" into the terminal. This will open the vi coding editor.
@@ -26,13 +26,34 @@ vi
 
 
 3. Press "i" to enter Insert Mode. 
-4. Once in Insert mode, you can type and navigate as you would in a normal text editor. Add the line "# CS5704 SE Basics Workshop" to the top of the file.
-5. To exit, press **Esc** then type `:wq README.md` to save the file under the filename README.md and exit. Congrats---you successfully exited vi!
-6. Open the README file in the vi editor to add your name and PID to the document.
+4. Once in Insert mode, you can type and navigate as you would in a normal text editor. To use print statements in JavaScript, you would use the `console.log(" ");` command. Add a line to this document that prints out a relevant message (i.e., "Practicing using vi") in the file.
+5. To exit, press **Esc** then type `:wq practice.js` to save the file under the filename README.md and exit. Congrats---you successfully exited vi! 🎉 To run the file in the terminal, use the following command:
 
 ```bash
-vi README.md
+node practice.js
 ```
+
+---
+
+##### **Reflection**
+1. Open a new text file in the vi editor called `reflection.txt`. 
+
+```bash
+vi reflection.txt
+```
+
+2. Go into insert mode to add which development environments or IDEs you typically use for programming, and explain why.
+3. Save the file and exit the vi editor. Use the following command to display the content of your file in the terminal.
+```bash
+cat reflection.txt
+```
+
+4. Open the file in the vi editor to add your responses to the following questions. Use the reference table below to help navigate and edit the file. Please keep your responses brief (no more than 2-3 sentences each).
+* (a) What development environment or IDE do you typically use for programming? (answered in Step 2)
+* (b) Do you have experience using vi or other terminal based editors?; 
+* (c) What are the advantages/disadvantages of using terminal-based editors for coding in practice? 
+
+5. Save the file and exit the vi editor.
 
 ### Reference Table
 
