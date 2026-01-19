@@ -3,14 +3,20 @@ metadata:
   sourceRepo: github.com/chbrown13/labspace-se-basics
   contentVersion: abcd123 # Will be filled in during CI
 
-title: Labspace starter
+title: SE Basics Workshop
 description: |
-  A basic template for creating a Labspace, including all of the boilerplate needed to write and publish a Labspace.
+  This workshop provides a brief overview of several useful tools and activities necessary to support software engineering work.
 
 sections:
   - title: Introduction
     contentPath: .labspace/01-introduction.md
-  - title: Main Content 1
-    contentPath: .labspace/02-main-content.md
+  - title: Coding
+    contentPath: .labspace/02-coding.md
+  - title: IDEs
+    contentPath: .labspace/03-environments.md
+  - title: Git
+    contentPath: .labspace/04-git.md
+  - title: Task Management
+    contentPath: .labspace/05-tasks.md
   - title: Conclusion
-    contentPath: .labspace/03-conclusion.md
+    contentPath: .labspace/06-conclusion.md

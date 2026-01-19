@@ -1,0 +1,60 @@
+# Coding
+
+Coding is writing instructions in a language computers understand. Software engineering is more than coding, however writing code is an important component. One of the first things you need to know to be a successful software engineer is a programming language. Developers should also be able to quickly learn new programming languages and transfer knowlede between languages, which can be [very difficult to do](http://nischalshrestha.me/docs/cross_language_interference.pdf). For example, the following scripts print `hello world!` in different programming languages:
+
+```js no-run-button no-copy-button
+    console.log( "hello world!" );
+```
+
+```python no-run-button no-copy-button
+    print("hello world!")
+```
+
+```ruby no-run-button no-copy-button
+    print 'hello world!'
+```
+```java no-run-button no-copy-button
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("hello world!");
+    }
+}
+```
+
+## Write-Compile-Execute
+
+In general, all of coding can be summed up by the **Write -> Compile -> Execute** process:
+
+### Write
+Also known as "Code" (code-compile-execute), this phase involves giving instructions to the computer by creating a program with source code. This program is:
+– Written in a programming language (i.e. Java)
+– Human-readable
+– Written using a text editor or integrated development environment (IDE)
+
+### Compile
+Compilation translates the program from one language to another that can be understood by hardware. **Bytecode** is an intermediate language that has been compiled from source code and translated into low-level code. Some programming languages have distinct compilation steps (i.e. Java) while others compile during execution (i.e. Python). 
+
+### Execution
+The computer or a virtual machine reads and acts on the translated instructions from the written program. When either Compilation or Execution fails, return to Writing to update the source code.
+
+## REPL
+
+A **Read-Eval-Print Loop (REPL)** is an interactive interpreter for programming languages. This concept originated with LISP, but many other languages today (Python, Ruby, JavaScript, Haskell, etc.) use REPL's to provide interactive programming language environments that bypass the compile stage of the write-compile-execute cycle. REPLs are useful for simple experimentation and developing quick functions with languages.
+
+There are 4 components to REPL environments:
+
+    * _Read_ reads in input from the keyboard
+    * _Eval_ evaluates code passed to it
+    * _Print_ formats and displays the output
+    * _Loop_ continues the three previous commands until the REPL is terminated
+
+## 📝 Activity
+
+ Complete the program below in any programming language of your choice. When you are finished, save the program with the name "fizzbuzz" in a source code file (i.e., `fizzbuzz.c` for C programs). This is a simple activity to practice programming, not an interview. In addition, this environment contains limited language support---so you may not be able to run your program in this labspace. You will not be graded based on the quality of your code and are not expected to come up with the most efficient solution. Your program must at least contain some type of loop structure, conditional statements, and print statements.
+
+> **Fizz Buzz**
+> 
+> Fizz buzz is a classic [children's game](https://en.wikipedia.org/wiki/Fizz_buzz) and [programming challenge](https://leetcode.com/problems/fizz-buzz/). Write a program that prints each number from 1 to 20. If the number is divisible by 3, print `Fizz` instead. If the number is divisible by 5, print `Buzz` instead. And if the number is divisible by 3 and 5, then print `FizzBuzz`. 
+
+* Remember to take your save your file! You will need it later to submit this workshop.
+
