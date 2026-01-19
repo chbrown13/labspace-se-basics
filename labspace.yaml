@@ -12,9 +12,9 @@ sections:
     contentPath: .labspace/01-introduction.md
   - title: Coding
     contentPath: .labspace/02-coding.md
-  - title: IDEs
+  - title: Development Environments
     contentPath: .labspace/03-environments.md
-  - title: Git
+  - title: Version Control
     contentPath: .labspace/04-git.md
   - title: Task Management
     contentPath: .labspace/05-tasks.md

@@ -2,7 +2,7 @@
 
 👋 Welcome to the **SE Basics** workshop! 
 
-In this workshop, you will gain hands-on experience with several core tools and activities to support software engineering work in practice. By the end of this workshop, you should gain a deeper understanding of:
+In this workshop,[^1] you will gain hands-on experience with several core tools and activities to support software engineering work in practice. By the end of this workshop, you should gain a deeper understanding of:
 
 * What is software engineering
 * How common tools and practices fit into software development
@@ -10,16 +10,16 @@ In this workshop, you will gain hands-on experience with several core tools and 
 
 ## 🙋 What is software engineering?
 
-Software engineering is a discipline that encompasses:
+Software engineering is a discipline that encompasses:[^2]
 *  the **_process_** of software development; 
 * **_methods_** for software analysis, design, construction, testing, and maintenance; and 
-* **_tools_** to support the processes and the methods [1].
+* **_tools_** to support the processes and the methods.
 
 Together, these concepts help teams build software that is not only functional, but also reliable, maintainable, and scalable.
  
 ## 🔄 Software Development Lifecycle (SDLC)
 
-Most software projects, regardless of language or domain, follow a variation of the _software development lifecycle_:[^1]
+Most software projects, regardless of language or domain, follow a variation of the _software development lifecycle_:[^3]
 1. **Requirements:** Understanding requirements for the system
 2. **Design:** Deciding the structure of the system
 3. **Implementation:** Translating the design into a concrete system
@@ -36,7 +36,10 @@ This workshop is built on Docker Labspaces. Docker Labspaces provide fully packa
 
 Next, open your browser to http://localhost:3030. You should see the tutorial in your browser.
 
-TODO: screenshot here
+<img src="/.labspace/images/labspace.png" />
 
-> [1] Modified definition based on "Software Engineering: A Practitioner's Approach" (Pressman)
-> As defined by this class, specific terms and phases will vary based on company, team, process, etc.
+[^1]: The content of this workshop is based on the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by Dr. Chris Parnin
+
+[^2]: Definition adapted from "Software Engineering: A Practitioner's Approach" (Pressman)
+
+[^3]: As defined by this class, specific terms and phases will vary based on company, team, process, etc.

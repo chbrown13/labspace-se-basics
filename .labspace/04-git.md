@@ -1,6 +1,7 @@
-# Git
+# Version Control
 
-![image](https://cloud.githubusercontent.com/assets/742934/15635543/d1044ff6-25ae-11e6-9680-077830cff8f5.png)
+![git object model](/.labspace/images/git.png)
+
 
 ### Why Version Control?
 
@@ -26,7 +27,7 @@ git reset --hard v2.31.0
 
 ### Git's Object Model: Content-Addressable Data Store.
 
-![git object model](../resources/imgs/git-object-model.png)
+![detailed git object model](/.labspace/images/git_object_model.png)
 
 * Every object has a SHA-1 hash: 40 hex characters.
 * Given 40 hex characters, we can find the unique object with that hash.
@@ -39,6 +40,9 @@ git log -1 --abbrev=40
 
 ### Object Types: Blobs, Trees, Commits
 
+![git object overview](/.labspace/images/git-overview.png)
+
+
 We will use the `git cat-file` command to help us search for objects inside the store.
 If we provide git with a partial hash, it will attempt to find a unique match, and if it is unable to, it will provide a list of those that did match.
 
@@ -49,7 +53,7 @@ git cat-file -p 8348
 #### Blobs
 
 Let's examine a **blob** object. A blob contains _file contents_. 
-![img](../resources/imgs/git-blob.png)
+![git blob](/.labspace/images/git-blob.png)
 
 ```bash
 git cat-file -p 83484a
@@ -61,14 +65,14 @@ git cat-file -p 83484a
 #### Trees
 
 Let's examine a **tree** object. A tree contains _folder contents_. 
-![img](../resources/imgs/git-tree.png)
+![git tree](/.labspace/images/git-tree.png)
 
 ```bash
 git cat-file -p 83484f
 ```
-Example representation of folder contents contained by a tree: 
+A simple example representation of folder contents contained by a tree is below: 
 
-![img](../resources/imgs/git-tree-folder.png)
+![Git tree example](/.labspace/images/git-tree-folder.png)
 
 **📝 Exercise:** 2) What is the output of `git cat-file -p 83484f | tail -4 | head -1`? Briefly explain what this command does.
 
@@ -82,7 +86,7 @@ Perhaps one of the most important type of object inside the object model is a co
 * An author name, email, time.
 * A committer name, email, time.
 
-![git commit](../resources/imgs/git-commit.png)
+![git commit](/.labspace/images/git-commit.png)
 
 
 Let's examine an example commit.
@@ -125,7 +129,7 @@ To get a closer look at specific changes, use:
 
 _Branches_ are simply pointers to commits. _Tags_ are pointers to anything (commits, trees, blobs).
 
-![git-branches](../resources/imgs/git-branches.png)
+![git-branches](/.labspace/images/git-branches.png)
 
 Use `git branch` to see the current branch and `git branch -a` to view a list of branches for the project.
 
@@ -204,7 +208,7 @@ git commit -m "initial commit"
 
 Changes flow from our working tree, to staging index, and into repository.
 
-![git-staging](../resources/imgs/git-staging.png)
+![git-staging](/.labspace/images/git-staging.png)
 
 Use the following sets of steps to observe what happens to the _working tree_ and _index_, by running the `git status` command:
 
@@ -234,11 +238,11 @@ Discard changes in worktree (we will lose our work!). This will restore changes 
 git restore --source=HEAD --staged --worktree README.md
 ```
 
-### Remotes
+### Remote Repositories
 
 While having a local git repository is cool, we should connect it to another remote repository. In other words, **we have no place to `git push` to**...
 
-![git-remote](../resources/imgs/git-remote.png)
+![git-remote](/.labspace/images/git-remote.png)
 
 #### Remote operations
 
@@ -249,7 +253,7 @@ While having a local git repository is cool, we should connect it to another rem
 
 ## 📝 Activity: Let's create a remote repo!
 
-Now let's push the local repository you created earlier to make it a remote repository! This will allow others on your team to access and make changes to the project.
+Now let's push the local repository you created earlier to make it a remote repository! This will allow others on your team to access and make changes to the project. For this class, we will primarily use GitHub for remote repositories.
 
 1. Create a new _private_ repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS5704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
 
