@@ -10,11 +10,7 @@ In software engineering work, there are often many intangible sets of things _to
 –a patch
 –missing documentation, ... 
 
-Popular issue tracking systems such as Bugzilla and JIRA originated as a bug reporting tools. A project hosted on GitHub comes with an issue tracker too. Anyone can report an issue, add labels, and any team member(s) can be assigned to an issue. Nowadays, developers also use issues as a lightweight task management tool. For this usecase, it best works for smaller projects.
-
-See open issues: https://github.com/ottomatica/docable-notebooks/issues
-
-See closed issues: https://github.com/ottomatica/docable-notebooks/issues?q=is%3Aissue+is%3Aclosed
+Popular issue tracking systems such as Bugzilla and JIRA originated as a bug reporting tools. A project hosted on GitHub comes with an issue tracker too. Anyone can report an issue, add labels, and any team member(s) can be assigned to an issue. Nowadays, developers also use issues as a lightweight task management tool. For this use case, it best works for smaller projects.
 
 Features:
 * You can create task lists: https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments
@@ -25,7 +21,7 @@ Features:
 
 ## 📝 Activity: Create an Issue
 
-Create a new GitHub issue on the [workshop repository](https://github.com/CS5704-VT/Workshops) (**_not_** _your Basics repository_) to report any issues on any of the topics covered in this SE Basics Workshop. This includes any errors you faced, typos, or suggestions for improvements and new modules to add. Please do not create an issue saying there are no issues. Make sure your issue has a good title and description, an appropriate label, and assign the instructor (chbrown13) to the issue. If you encountered multiple problems, create multiple issues for each or add a task list for related items in the same issue using the `[ ]` markdown syntax. 
+Create a new GitHub issue on the [workshop repository](https://github.com/chbrown13/labspace-se-basics) (**_not_** _your Basics repository_) to report any issues on any of the topics covered in this SE Basics Workshop. This includes any errors you faced, typos, or suggestions for improvements and new modules to add. Please do not create an issue saying there are no issues. Make sure your issue has a good title and description, an appropriate label, and assign the instructor (chbrown13) to the issue. If you encountered multiple problems, create multiple issues for each or add a task list for related items in the same issue using the `[ ]` markdown syntax. 
 
 ## Kanban Boards
 
