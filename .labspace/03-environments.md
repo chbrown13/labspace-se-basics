@@ -49,9 +49,12 @@ cat reflection.txt
 ```
 
 4. Open the file in the vi editor to add your responses to the following questions. Use the reference table below to help navigate and edit the file. Please keep your responses brief (no more than 2-3 sentences each).
-* (a) What development environment or IDE do you typically use for programming? (answered in Step 2)
-* (b) Do you have experience using vi or other terminal based editors?; 
-* (c) What are the advantages/disadvantages of using terminal-based editors for coding in practice? 
+
+(a) What development environment or IDE do you typically use for programming? (answered in Step 2)
+
+(b) Do you have experience using vi or other terminal based editors?; 
+
+(c) What are the advantages/disadvantages of using terminal-based editors for coding in practice? 
 
 5. Save the file and exit the vi editor.
 

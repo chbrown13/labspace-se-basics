@@ -5,7 +5,17 @@
 
 ### Why Version Control?
 
-> You're working on a team project and need to make edits to reports and code. You waiting for your team member to make a change and then email you back another a copy. There has to be a better way...
+> You are completing a coding project. Your code is working great! But then you made a few changes and everything breaks...
+
+_or_
+
+> You're working on a team project and need to make edits to reports and code. You waiting for your team member to make a change and then email you back another a copy... 
+
+There has to be a better way!
+
+![named folders xkcd](/.labspace/images/versions.png)
+
+
 
 "Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Every large software development project relies on it, and most programmers use it for their small jobs as well. And it isn’t just for software: books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system." -- [Version Control with Git](http://swcarpentry.github.io/git-novice/)
 
@@ -271,5 +281,5 @@ Now let's push the local repository you created earlier to make it a remote repo
 
 6. Invite the instructor (chbrown13) to be a collaborator to your repository (`Settings -> Manage access`).
 
-**7. This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, README, and `git.txt` from the previous activities.**
+**7. This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities. In addition, add a README with your name and PID.**
 
