@@ -37,17 +37,6 @@ Compilation translates the program from one language to another that can be unde
 ### Execution
 The computer or a virtual machine reads and acts on the translated instructions from the written program. When either Compilation or Execution fails, return to Writing to update the source code.
 
-## REPL
-
-A **Read-Eval-Print Loop (REPL)** is an interactive interpreter for programming languages. This concept originated with LISP, but many other languages today (Python, Ruby, JavaScript, Haskell, etc.) use REPL's to provide interactive programming language environments that bypass the compile stage of the write-compile-execute cycle. REPLs are useful for simple experimentation and developing quick functions with languages.
-
-There are 4 components to REPL environments:
-
-    * _Read_ reads in input from the keyboard
-    * _Eval_ evaluates code passed to it
-    * _Print_ formats and displays the output
-    * _Loop_ continues the three previous commands until the REPL is terminated
-
 ## 📝 Activity
 
  Complete the program below in any programming language of your choice. You can create a new file by pressing **Ctrl + n** or selecting "New File" in the welcome page below.

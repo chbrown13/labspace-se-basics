@@ -275,11 +275,11 @@ Now let's push the local repository you created earlier to make it a remote repo
 
 5. Run `git pull` locally. Verify you now have the updated changes.
 
-    ```bash
-    git pull
-    ```
+```bash
+git pull
+```
 
 6. Invite the instructor (chbrown13) to be a collaborator to your repository (`Settings -> Manage access`).
 
-**7. This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities. In addition, add a README with your name and PID.**
+**7. This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities (there is nothing to submit for the REPL activity). In addition, add a README with your name and PID.**
 

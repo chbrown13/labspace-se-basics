@@ -2,7 +2,47 @@
 
 Integrated Development Environments (IDEs) enable software engineers to complete various activities related to writing a computer program. IDEs often provide a variety of features to support software development, including syntax highlighting, autocomplete, static analysis tools, debugging functionality, refactoring, multiple language support, integrations with git, code searching, and more...
 
-Originally, software engineers wrote program code using [punched cards](https://en.wikipedia.org/wiki/Punched_card) in languages such as FORTRAN. You tried out an IDE in the previous activity. This Docker labspace is based on [VS Code](https://code.visualstudio.com/), one of the most popular and widely used coding editors. You will get the chance to try another out for yourself.
+Originally, software engineers wrote program code using [punched cards](https://en.wikipedia.org/wiki/Punched_card) in languages such as FORTRAN. You tried out an IDE in the previous activity. This Docker labspace is based on [VS Code](https://code.visualstudio.com/), one of the most popular and widely used coding editors. You will get the chance to try out two other development environments for yourself.
+
+## REPL
+
+A **Read-Eval-Print Loop (REPL)** is an interactive interpreter for programming languages. This concept originated with LISP, but many other languages today (Python, Ruby, JavaScript, Haskell, etc.) use REPL's to provide interactive programming language environments that bypass the compile stage of the write-compile-execute cycle. REPLs are useful for simple experimentation and developing quick functions with languages.
+
+There are 4 components to REPL environments:
+
+    * _Read_ reads in input from the keyboard
+    * _Eval_ evaluates code passed to it
+    * _Print_ formats and displays the output
+    * _Loop_ continues the three previous commands until the REPL is terminated
+
+## 📝 Activity
+
+Complete the following to try out a REPL environment:
+
+1. Open the terminal in the VS code editor (Select "Terminal" in the bottom panel or press **Ctrl+Shift+`**)
+2. Type `node` into the terminal and press **Enter**.
+
+```bash
+node
+```
+
+3. This will enter you into the REPL environment. The following script will print "Hello CS5704!":
+
+```bash
+console.log("Hello CS5704!");
+```
+
+4. The command below will create a function `add` that adds two numbers input as parameters:
+
+```bash
+const add = (a, b) => { return a + b }
+```
+
+5. In the terminal, you can now use this function. Type `add(x, y)` to add two given numbers _x_ and _y_.
+
+Ex) `add(57,04)` should return `61`
+
+6. Press **Ctrl+D** to exit the REPL environment.
 
 ## VI 
 Before the modern coding editors and cloud-based IDES, software engineers wrote code using editors in the console or terminal. One example is `vi`, an open source terminal-based development environment referred to as "[the programmer's editor](https://www.vim.org/about.php)". Vim (Vi Improved) is a more configurable version offering syntax highlighting, plugins, and more advanced commands. This coding environment is minimal, and it is a common joke in software engineering communities that `vi` is difficult to exit out of...
@@ -18,7 +58,7 @@ Before the modern coding editors and cloud-based IDES, software engineers wrote 
 ##### **vi Practice**
 
 1. Open the terminal in the VS code editor (Select "Terminal" in the bottom panel or press **Ctrl+Shift+`**)
-2. Type "vi" into the terminal. This will open the vi coding editor.
+2. Type "vi" into the terminal and press **Enter**. This will open the vi coding editor.
 
 ```bash
 vi
