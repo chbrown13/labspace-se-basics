@@ -13,7 +13,7 @@ There are 4 components to REPL environments:
     * _Read_ reads in input from the keyboard
     * _Eval_ evaluates code passed to it
     * _Print_ formats and displays the output
-    * _Loop_ continues the three previous commands until the REPL is terminated
+    * _Loop_ continues read/eval/print until the REPL is terminated
 
 ## 📝 Activity
 
@@ -32,17 +32,20 @@ node
 console.log("Hello CS5704!");
 ```
 
-4. The command below will create a function `add` that adds two numbers input as parameters:
+4. This should print the `Hello World!` message to the console (in addition, you may see an `undefined` message indicating the `console.log` function returns **`null`**.
+
+
+5. The command below will create a function `add` that adds two numbers input as parameters:
 
 ```bash
 const add = (a, b) => { return a + b }
 ```
 
-5. In the terminal, you can now use this function. Type `add(x, y)` to add two given numbers _x_ and _y_.
+6. In the terminal, you can now use this function. Type `add(x, y)` to add two given numbers _x_ and _y_.
 
 Ex) `add(57,04)` should return `61`
 
-6. Press **Ctrl+D** to exit the REPL environment.
+7. Press **Ctrl+D** to exit the REPL environment.
 
 ## VI 
 Before the modern coding editors and cloud-based IDES, software engineers wrote code using editors in the console or terminal. One example is `vi`, an open source terminal-based development environment referred to as "[the programmer's editor](https://www.vim.org/about.php)". Vim (Vi Improved) is a more configurable version offering syntax highlighting, plugins, and more advanced commands. This coding environment is minimal, and it is a common joke in software engineering communities that `vi` is difficult to exit out of...
