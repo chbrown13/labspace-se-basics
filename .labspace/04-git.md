@@ -127,10 +127,13 @@ Let's examine a diff.
 git diff --raw v2.31.0 v2.31.1
 ```
 
-To get a closer look at specific changes, use:
+Press **q** to exit. To get a closer look at specific changes, use:
 
 ```bash
+git diff v2.31.0 v2.31.1
 ```
+
+You can use the **down arrow** to view specific changes to files. Press **q** to exit.
 
 **📝 Exercise:** 4) What is the name of the first file listed that changed between versions 2.31.0 and 2.31.1?
 
