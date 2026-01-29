@@ -9,6 +9,11 @@ To launch the Labspace, run the following command:
 ```bash
 docker compose -f oci://chbrown13/labspace-se-basics up -d
 ```
+or
+
+```bash
+docker compose --project-directory . -f oci://chbrown13/labspace-se-basics up -d
+```
 
 And then open your browser to http://localhost:3030.
 
