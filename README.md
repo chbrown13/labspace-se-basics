@@ -9,7 +9,7 @@ To launch the Labspace, run the following command:
 ```bash
 docker compose -f oci://chbrown13/labspace-se-basics up -d
 ```
-or
+or (specifically for Windows)
 
 ```bash
 docker compose --project-directory . -f oci://chbrown13/labspace-se-basics up -d
