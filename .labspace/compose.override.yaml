@@ -1,6 +1,5 @@
 services:
   configurator:
-    image: dockersamples/labspace-configurator-git:latest
     environment:
       PROJECT_CLONE_URL: https://github.com/chbrown13/labspace-se-basics
 
