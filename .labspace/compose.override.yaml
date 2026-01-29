@@ -1,12 +1,13 @@
 services:
   configurator:
+    image: dockersamples/labspace-configurator-git:latest
     environment:
       PROJECT_CLONE_URL: https://github.com/chbrown13/labspace-se-basics
 
-  # workspace:
-  #   # Override the default image if desired
-  #   # More details - https://github.com/dockersamples/labspace-infra/blob/main/docs/configuration.md#overriding-the-workspace-image
-  #   image: dockersamples/labspace-workspace-java
+  workspace:
+    # Override the default image if desired
+    # More details - https://github.com/dockersamples/labspace-infra/blob/main/docs/configuration.md#overriding-the-workspace-image
+    image: dockersamples/labspace-workspace-node:latest
 
   #   # Override the default ports to publish additional ports you may need
   #   # More details - https://github.com/dockersamples/labspace-infra/blob/main/docs/configuration.md#overriding-the-workspace-ports
