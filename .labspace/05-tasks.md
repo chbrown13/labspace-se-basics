@@ -56,7 +56,7 @@ Instead of saying "Do analysis" => a more suitable task might be "Find R package
 
 ## 📝 Activity: GitHub Projects
 
-On your SE Basics repository, navigate to the Projects tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option(`TODO`, `In Progress`, `Done` columns). Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). Don't forget to update the workshop task to Done whenever you finish!
+On your workshop GitHub repository (`https://github.com/<your-username>/Basics`), navigate to the **Projects** tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option(`TODO`, `In Progress`, `Done` columns). Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). Don't forget to update the workshop task to Done whenever you finish!
 
 ## Scrum
 
@@ -70,5 +70,5 @@ The main things covered in a scrum:
 
 ## 📝 Activity: Scrum Meeting
 
-Find 1 or 2 other students in class to complete a stand-up meeting. You should stand up together to answer the three questions above about the tasks you added to your Kanban board in the previous activity. If you are not able to do this in class, you may complete the stand-up virtually. In your SE Basics repository, add a file named `standup.txt` with the name(s) and email IDs of the students you completed the stand-up meeting with.
+Find 1 or 2 other students in class to complete a stand-up meeting. You should stand up together to answer the three questions above about the tasks you added to your Kanban board in the previous activity. If you are not able to do this in class, you may complete the stand-up virtually. In your SE Basics repository, add a file named `standup.txt` with the name(s) and email IDs of the students you completed the stand-up meeting along with and a summary of responses.
 
