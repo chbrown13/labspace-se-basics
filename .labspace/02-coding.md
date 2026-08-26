@@ -50,7 +50,7 @@ _Tips:_
 
 * When you are finished, save the program with the name "fizzbuzz" in a source code file (i.e., `fizzbuzz.c` for C programs).You will need this later to submit for the workshop assignment.
 * This is a simple activity to practice programming, not an interview. You will not be graded based on the quality of your code and are not expected to come up with the most efficient solution. 
-* The labspace environment contains limited programming languages---so you may not be able to run your program within this labspace. (If desired, you may install language frameworks at your own leisure).
+* The labspace environment contains limited programming languages so you may not be able to run your program within this labspace. If desired, you may install language frameworks at your own leisure. For Python, you can run `python3 fizzbuzz.py` but `python fizzbuzz.py` will not work.
 * Your program should generally include at least contain some type of loop structure, conditional statements, and print statements.
 
 [^1]: Shrestha, et al. _"Here we go again: Why is it difficult for developers to learn another programming language?."_ Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering (ICSE). 2020. [[pdf](http://nischalshrestha.me/docs/cross_language_interference.pdf)]
