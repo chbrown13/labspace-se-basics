@@ -181,7 +181,7 @@ Let's create a new local git repository.
 Create a new directory (Basics) and file (README.md).
 
 ```save-as=README.md
-# CS5704 SE Basics Workshop
+# CS3704 SE Basics Workshop
 Hello!
 ```
 

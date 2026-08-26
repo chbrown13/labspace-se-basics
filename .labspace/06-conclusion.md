@@ -1,6 +1,6 @@
 # Conclusion
 
-🥳 Congrats! You have completed the CS5704 SE Basics Workshop! You have started to master sample of foundational skills to prepare you for practical software engineering work.
+🥳 Congrats! You have completed the CS3704 SE Basics Workshop! You have started to master sample of foundational skills to prepare you for practical software engineering work.
 
 ✅ You now know how to:
 

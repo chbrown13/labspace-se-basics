@@ -26,7 +26,7 @@ Complete the following to try out a REPL environment:
 node
 ```
 
-3. This will enter you into the REPL environment. The following script will print "Hello CS5704!":
+3. This will enter you into the REPL environment. The following script will print "Hello CS3704!":
 
 ```bash no-run-button
 console.log("Hello CS3704!");
