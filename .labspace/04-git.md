@@ -24,13 +24,13 @@ There has to be a better way!
 
 What better way to understand git than to check out git itself! This will take a while...(if necessary, run this locally)
 
-```bash
+```bash no-run-button
 git clone https://github.com/git/git
 ```
 
 We'll be working inside the git/ directory set our working state to v2.31.0
 
-```bash
+```bash no-run-button
 cd git
 git reset --hard v2.31.0
 ```
@@ -44,7 +44,7 @@ git reset --hard v2.31.0
 
 Let's examine a single commit.
 
-```bash
+```bash no-run-button
 git log -1 --abbrev=40
 ```
 
@@ -56,7 +56,7 @@ git log -1 --abbrev=40
 We will use the `git cat-file` command to help us search for objects inside the store.
 If we provide git with a partial hash, it will attempt to find a unique match, and if it is unable to, it will provide a list of those that did match.
 
-```bash
+```bash no-run-button
 git cat-file -p 8348
 ```
 
@@ -65,7 +65,7 @@ git cat-file -p 8348
 Let's examine a **blob** object. A blob contains _file contents_. 
 ![git blob](/.labspace/images/git-blob.png)
 
-```bash
+```bash no-run-button
 git cat-file -p 83484a
 ```
 
@@ -77,7 +77,7 @@ git cat-file -p 83484a
 Let's examine a **tree** object. A tree contains _folder contents_. 
 ![git tree](/.labspace/images/git-tree.png)
 
-```bash
+```bash no-run-button
 git cat-file -p 83484f
 ```
 A simple example representation of folder contents contained by a tree is below: 
@@ -101,7 +101,7 @@ Perhaps one of the most important type of object inside the object model is a co
 
 Let's examine an example commit.
 
-```bash
+```bash no-run-button
 git cat-file -p 834845
 ```
 
@@ -109,7 +109,7 @@ git cat-file -p 834845
 
 We can examine the commit graph (but only the first part!).
 
-```bash
+```bash no-run-button
 PAGER='head -n 80' git log --graph --oneline
 ```
 
@@ -123,13 +123,13 @@ Instead, diffs are dynamically calculated from the commit graph inside the objec
 
 Let's examine a diff.
 
-```bash
+```bash no-run-button
 git diff --raw v2.31.0 v2.31.1
 ```
 
 Press **q** to exit. To get a closer look at specific changes, use:
 
-```bash
+```bash no-run-button
 git diff v2.31.0 v2.31.1
 ```
 
@@ -154,19 +154,19 @@ Use `git branch` to see the current branch and `git branch -a` to view a list of
 * Updates the working directory to match the commit's tree.
 
 We can switch our branch to the maintenance branch.
-```bash
+```bash no-run-button
 git switch todo
 ```
 
 Let's confirm.
 
-```bash
+```bash no-run-button
 git status ; git branch
 ```
 
 We can return to the main branch.
 
-```bash
+```bash no-run-button
 git switch master
 ```
 
@@ -190,14 +190,14 @@ In the next set of commands, we will be working inside the `Basics/` directory.
 
 This will create a new .git directory to store commits and other objects.
 
-```bash
+```bash no-run-button
 cd Basics
 git init
 ```
 
 We can quickly inspect the contents of the git's directory and object store.
 
-```bash
+```bash no-run-button
 ls -l .git
 echo "objects:"
 ls -l .git/objects
@@ -205,13 +205,13 @@ ls -l .git/objects
 
 Before adding a file to the repository, it must first be staged.
 
-```bash
+```bash no-run-button
 git add README.md
 ```
 
 We will commit our staged changes into the repository.
 
-```bash
+```bash no-run-button
 git commit -m "initial commit"
 ```
 
@@ -227,7 +227,7 @@ Use the following sets of steps to observe what happens to the _working tree_ an
 
 Update the README.md and stage our change.
 
-```bash
+```bash no-run-button
 echo " Update: $(date)" >> README.md
 cat README.md
 git add README.md
@@ -235,19 +235,19 @@ git add README.md
 
 View the current state of our **working tree** and **index**.
 
-```bash
+```bash no-run-button
 git status
 ```
 
 Unstage file (remove from index), but keep changes in working tree.
 
-```bash
+```bash no-run-button
 git restore --staged README.md
 ```
 
 Discard changes in worktree (we will lose our work!). This will restore changes to both the index and the working tree based on the latest version in the repo.
 
-```bash
+```bash no-run-button
 git restore --source=HEAD --staged --worktree README.md
 ```
 
@@ -268,7 +268,7 @@ While having a local git repository is cool, we should connect it to another rem
 
 Now let's push the local repository you created earlier to make it a remote repository! This will allow others on your team to access and make changes to the project. For this class, we will primarily use GitHub for remote repositories.
 
-1. Create a new _private_ repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS5704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
+1. Create a new repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS3704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
 
 2. Follow the instructions to add a remote url to an existing git repository (**push an existing repository from the command line**). It should start with something like: `git remote add origin https://github.com/<user>/<repo>.git`
 
@@ -278,7 +278,7 @@ Now let's push the local repository you created earlier to make it a remote repo
 
 5. Run `git pull` locally. Verify you now have the updated changes.
 
-```bash
+```bash no-run-button
 git pull
 ```
 

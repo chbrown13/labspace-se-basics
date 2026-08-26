@@ -22,14 +22,14 @@ Complete the following to try out a REPL environment:
 1. Open the terminal in the VS code editor (Select "Terminal" in the bottom panel or press **Ctrl+Shift+`**)
 2. Type `node` into the terminal and press **Enter**.
 
-```bash
+```bash no-run-button
 node
 ```
 
 3. This will enter you into the REPL environment. The following script will print "Hello CS5704!":
 
-```bash
-console.log("Hello CS5704!");
+```bash no-run-button
+console.log("Hello CS3704!");
 ```
 
 4. This should print the `Hello World!` message to the console (in addition, you may see an `undefined` message indicating the `console.log` function returns **`null`**.
@@ -37,13 +37,13 @@ console.log("Hello CS5704!");
 
 5. The command below will create a function `add` that adds two numbers input as parameters:
 
-```bash
+```bash no-run-button
 const add = (a, b) => { return a + b }
 ```
 
 6. In the terminal, you can now use this function. Type `add(x, y)` to add two given numbers _x_ and _y_.
 
-Ex) `add(57,04)` should return `61`
+Ex) `add(37,04)` should return `41`
 
 7. Press **Ctrl+D** to exit the REPL environment.
 
@@ -63,7 +63,7 @@ Before the modern coding editors and cloud-based IDES, software engineers wrote 
 1. Open the terminal in the VS code editor (Select "Terminal" in the bottom panel or press **Ctrl+Shift+`**)
 2. Type "vi" into the terminal and press **Enter**. This will open the vi coding editor.
 
-```bash
+```bash no-run-button
 vi
 ```
 
@@ -72,7 +72,7 @@ vi
 4. Once in Insert mode, you can type and navigate as you would in a normal text editor. To use print statements in JavaScript, you would use the `console.log(" ");` command. Add a line to this document that prints out a relevant message (i.e., "Practicing using vi") in the file.
 5. To exit, press **Esc** then type `:wq practice.js` to save the file under the filename README.md and exit. Congrats---you successfully exited vi! 🎉 To run the file in the terminal, use the following command:
 
-```bash
+```bash no-run-button
 node practice.js
 ```
 
@@ -81,13 +81,13 @@ node practice.js
 ##### **Reflection**
 1. Open a new text file in the vi editor called `reflection.txt`. 
 
-```bash
+```bash no-run-button
 vi reflection.txt
 ```
 
 2. Go into insert mode to add which development environments or IDEs you typically use for programming, and explain why.
 3. Save the file and exit the vi editor. Use the following command to display the content of your file in the terminal.
-```bash
+```bash no-run-button
 cat reflection.txt
 ```
 
