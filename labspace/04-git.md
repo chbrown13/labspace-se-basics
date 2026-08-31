@@ -69,7 +69,7 @@ Let's examine a **blob** object. A blob contains _file contents_.
 git cat-file -p 83484a
 ```
 
-**📝 Exercise:** Create a text file called `git.txt` to answer some questions throughout this activity. 1) What is the method signature (return type, method name, and parameters) of the last function in this blob?
+**📝 Exercise:** Create a text file outside of this folder called `git.txt` to answer some questions throughout this activity (`vi ../git.txt`, or use the labspace editor). 1) What is the method signature (return type, method name, and parameters) of the last function in this blob?
 
 
 #### Trees
@@ -164,10 +164,10 @@ Let's confirm.
 git status ; git branch
 ```
 
-We can return to the main branch.
+We can return to the main branch and go back to the labspace project directory.
 
 ```bash no-run-button
-git switch master
+git switch master && cd ..
 ```
 
 ## 📝 Activity: Creating a Repo
@@ -199,7 +199,7 @@ We can quickly inspect the contents of the git's directory and object store.
 
 ```bash no-run-button
 ls -l .git
-echo "objects:"
+
 ls -l .git/objects
 ```
 
@@ -209,7 +209,12 @@ Before adding a file to the repository, it must first be staged.
 git add README.md
 ```
 
-We will commit our staged changes into the repository.
+We will commit our staged changes into the repository, but first you will need to let the labspace know who you are...
+
+```bash no-run-button
+git config user.email "you@example.com"   # email for your GitHub.com account
+git config user.name "Your Name"          # username for your GitHub.com account
+```
 
 ```bash no-run-button
 git commit -m "initial commit"
@@ -231,6 +236,12 @@ Update the README.md and stage our change.
 echo " Update: $(date)" >> README.md
 cat README.md
 git add README.md
+```
+
+Verify your README file now has the current date appended to the end.
+
+```bash no-run-button
+cat README.md
 ```
 
 View the current state of our **working tree** and **index**.
@@ -270,9 +281,9 @@ Now let's push the local repository you created earlier to make it a remote repo
 
 1. Create a new repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS3704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
 
-2. Follow the instructions to add a remote url to an existing git repository (**push an existing repository from the command line**). It should start with something like: `git remote add origin https://github.com/<user>/<repo>.git`
+2. Follow the instructions to add a remote url to an existing git repository (**push an existing repository from the command line**). It should start with something like: `git remote add origin https://github.com/<usernamei>/Basics.git` and include `git push -u origin main`.
 
-3. Push your changes to GitHub. Verify you can see your updated README.md!
+3. Push your changes to GitHub. Verify you can see your updated README.md! The labspace will ask you to verify your GitHub account through the browser, please follow the instructions to approve.
 
 4. On GitHub, edit the README.md (click on the pencil icon in the top right corner of the file) to add your first and last name under the heading and modify the next line to say "Hello GitHub!". Commit the changes directly on GitHub. Now you have changes in your remote (origin) repository that are missing on your local copy.
 
@@ -284,5 +295,5 @@ git pull
 
 6. Invite the instructor (chbrown13) to be a collaborator to your repository (`Settings -> Manage access`).
 
-**7. This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities (there is nothing to submit for the REPL activity). In addition, add a README with your name and PID.**
+7. **This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities (from the terminal in the Basics directory, run `cp ../fizzbuzz.<ext> ../practice.js ../reflection.txt ../git.txt .` to copy the files to your repo directory. There is nothing to submit for the REPL activity). In addition, make sure the README contains your name and PID. Stage, commit, and push your changes!**
 
