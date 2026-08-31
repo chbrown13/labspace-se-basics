@@ -36,7 +36,7 @@ This workshop is built on Docker Labspaces. Docker Labspaces provide fully packa
 
 Next, open your browser to http://localhost:3030. You should see the workshop in your browser. Select "Load VS Code here" to display a development environment in your browser alongside the workshop activities.
 
-<img src="/.labspace/images/labspace.png" />
+<img src="/images/labspace.png" />
 
 [^1]: The content of this workshop is based on the [Engineering Basics](https://github.com/chrisparnin/EngineeringBasics) workshop by Dr. Chris Parnin
 

@@ -50,9 +50,9 @@ Ex) `add(37,04)` should return `41`
 ## VI 
 Before the modern coding editors and cloud-based IDES, software engineers wrote code using editors in the console or terminal. One example is `vi`, an open source terminal-based development environment referred to as "[the programmer's editor](https://www.vim.org/about.php)". Vim (Vi Improved) is a more configurable version offering syntax highlighting, plugins, and more advanced commands. This coding environment is minimal, and it is a common joke in software engineering communities that `vi` is difficult to exit out of...
 
-<img src="/.labspace/images/vi1.jpg" width="400" height="400" />
+<img src="/images/vi1.jpg" width="400" height="400" />
 
-<img src="/.labspace/images/vi2.png" width="400" height="400" />
+<img src="/images/vi2.png" width="400" height="400" />
 
 ## 📝 Activity
 

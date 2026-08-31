@@ -1,6 +1,6 @@
 # Version Control
 
-![git object model](/.labspace/images/git.png)
+![git object model](/images/git.png)
 
 
 ### Why Version Control?
@@ -13,7 +13,7 @@ _or_
 
 There has to be a better way!
 
-![named folders xkcd](/.labspace/images/versions.png)
+![named folders xkcd](/images/versions.png)
 
 
 
@@ -37,7 +37,7 @@ git reset --hard v2.31.0
 
 ### Git's Object Model: Content-Addressable Data Store.
 
-![detailed git object model](/.labspace/images/git_object_model.png)
+![detailed git object model](/images/git_object_model.png)
 
 * Every object has a SHA-1 hash: 40 hex characters.
 * Given 40 hex characters, we can find the unique object with that hash.
@@ -50,7 +50,7 @@ git log -1 --abbrev=40
 
 ### Object Types: Blobs, Trees, Commits
 
-![git object overview](/.labspace/images/git-overview.png)
+![git object overview](/images/git-overview.png)
 
 
 We will use the `git cat-file` command to help us search for objects inside the store.
@@ -63,7 +63,7 @@ git cat-file -p 8348
 #### Blobs
 
 Let's examine a **blob** object. A blob contains _file contents_. 
-![git blob](/.labspace/images/git-blob.png)
+![git blob](/images/git-blob.png)
 
 ```bash no-run-button
 git cat-file -p 83484a
@@ -75,14 +75,14 @@ git cat-file -p 83484a
 #### Trees
 
 Let's examine a **tree** object. A tree contains _folder contents_. 
-![git tree](/.labspace/images/git-tree.png)
+![git tree](/images/git-tree.png)
 
 ```bash no-run-button
 git cat-file -p 83484f
 ```
 A simple example representation of folder contents contained by a tree is below: 
 
-![Git tree example](/.labspace/images/git-tree-folder.png)
+![Git tree example](/images/git-tree-folder.png)
 
 **📝 Exercise:** 2) What is the output of `git cat-file -p 83484f | tail -4 | head -1`? Briefly explain what this command does.
 
@@ -96,7 +96,7 @@ Perhaps one of the most important type of object inside the object model is a co
 * An author name, email, time.
 * A committer name, email, time.
 
-![git commit](/.labspace/images/git-commit.png)
+![git commit](/images/git-commit.png)
 
 
 Let's examine an example commit.
@@ -142,7 +142,7 @@ You can use the **down arrow** to view specific changes to files. Press **q** to
 
 _Branches_ are simply pointers to commits. _Tags_ are pointers to anything (commits, trees, blobs).
 
-![git-branches](/.labspace/images/git-branches.png)
+![git-branches](/images/git-branches.png)
 
 Use `git branch` to see the current branch and `git branch -a` to view a list of branches for the project.
 
@@ -221,7 +221,7 @@ git commit -m "initial commit"
 
 Changes flow from our working tree, to staging index, and into repository.
 
-![git-staging](/.labspace/images/git-staging.png)
+![git-staging](/images/git-staging.png)
 
 Use the following sets of steps to observe what happens to the _working tree_ and _index_, by running the `git status` command:
 
@@ -255,7 +255,7 @@ git restore --source=HEAD --staged --worktree README.md
 
 While having a local git repository is cool, we should connect it to another remote repository. In other words, **we have no place to `git push` to**...
 
-![git-remote](/.labspace/images/git-remote.png)
+![git-remote](/images/git-remote.png)
 
 #### Remote operations
 

@@ -9,14 +9,14 @@ description: |
 
 sections:
   - title: Introduction
-    contentPath: .labspace/01-introduction.md
+    contentPath: 01-introduction.md
   - title: Coding
-    contentPath: .labspace/02-coding.md
+    contentPath: 02-coding.md
   - title: Development Environments
-    contentPath: .labspace/03-environments.md
+    contentPath: 03-environments.md
   - title: Version Control
-    contentPath: .labspace/04-git.md
+    contentPath: 04-git.md
   - title: Task Management
-    contentPath: .labspace/05-tasks.md
+    contentPath: 05-tasks.md
   - title: Conclusion
-    contentPath: .labspace/06-conclusion.md
+    contentPath: 06-conclusion.md
