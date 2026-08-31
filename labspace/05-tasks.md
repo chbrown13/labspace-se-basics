@@ -5,10 +5,11 @@ In software engineering work, there are often many intangible sets of things _to
 ## Issue Trackers
 
 **Issue trackers** are systems to create, update, and resolve reported issues by customers or developers. An **issue** is a unit of work to accomplish an improvement in a system. This includes:
-–a bug
-–a requested feature
-–a patch
-–missing documentation, ... 
+
+– a bug
+– a requested feature
+– a patch
+– missing documentation, ... 
 
 Popular issue tracking systems such as Bugzilla and JIRA originated as a bug reporting tools. A project hosted on GitHub comes with an issue tracker too. Anyone can report an issue, add labels, and any team member(s) can be assigned to an issue. Nowadays, developers also use issues as a lightweight task management tool. For this use case, it best works for smaller projects.
 
@@ -56,7 +57,7 @@ Instead of saying "Do analysis" => a more suitable task might be "Find R package
 
 ## 📝 Activity: GitHub Projects
 
-On your workshop GitHub repository (`https://github.com/<your-username>/Basics`), navigate to the **Projects** tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option(`TODO`, `In Progress`, `Done` columns). Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). Don't forget to update the workshop task to Done whenever you finish!
+On **your workshop GitHub repository** (`https://github.com/<your-username>/Basics`), navigate to the **Projects** tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option(`TODO`, `In Progress`, `Done` columns). Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). Don't forget to update the workshop task to Done whenever you finish!
 
 ## Scrum
 
