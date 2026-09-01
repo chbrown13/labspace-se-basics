@@ -21,7 +21,7 @@ Features:
 
 ## 📝 Activity: Create an Issue
 
-Create a new GitHub issue on the [workshop repository](https://github.com/chbrown13/labspace-se-basics) (**_not_** _your Basics repository_) to report any issues on any of the topics covered in this SE Basics Workshop. This includes any errors you faced, typos, or suggestions for improvements and new modules to add. Please do not create an issue saying there are no issues. Make sure your issue has a good title and description, an appropriate label, and assign the instructor (chbrown13) to the issue. If you encountered multiple problems, create multiple issues for each or add a task list for related items in the same issue using the `[ ]` markdown syntax. 
+Create a new GitHub issue on the [workshop repository](https://github.com/chbrown13/labspace-se-basics) (**_not_** _your Basics repository_) to report feedback for the content covered in this SE Basics Workshop. This includes any errors you faced, typos, suggestions for improvements, or new modules to add. Please do not create an issue saying there are no issues. Make sure your issue has a good title and description. If you encountered multiple problems, create multiple issues for each or add a task list for related items in the same issue using the `[ ]` markdown syntax. 
 
 ## Kanban Boards
 
@@ -31,11 +31,11 @@ Tools such as [Trello](https://trello.com/) and [GitHub Projects](https://docs.g
 
 ### Boards, Lists, Cards
 
-![image](https://cloud.githubusercontent.com/assets/742934/15636941/eb418154-25db-11e6-9814-5a3c835c0c11.png)
+![image](./images/kanban1.png)
 
-![image](https://cloud.githubusercontent.com/assets/742934/15635646/cbe2b4fa-25b2-11e6-8dc9-e6cafca6629c.png)
+![image](./images/kanban3.png)
 
-In kanban, you have a “visual” pipeline for transitioning ideas into a delivered product. With these tools, you can move a card (often representing a task) between lists, which are on a single board. Many options recently, such as [GitHub projects](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-automation-for-project-boards), allow for further customization and automation of task management for projects based on your workflow (i.e. opened and closed issues, pull requests, etc.).
+In Kanban, you have a “visual” pipeline for transitioning ideas into a delivered product. With these tools, you can move a card (often representing a task) between lists, which are on a single board. Many options recently, such as [GitHub projects](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-automation-for-project-boards), allow for further customization and automation of task management for projects based on your workflow (i.e. opened and closed issues, pull requests, etc.).
 
 Recommended Pipeline:
 
@@ -56,7 +56,15 @@ Instead of saying "Do analysis" => a more suitable task might be "Find R package
 
 ## 📝 Activity: GitHub Projects
 
-On your workshop GitHub repository (`https://github.com/<your-username>/Basics`), navigate to the **Projects** tab to create a GitHub Projects board. Follow the instructions to add a project to your repository and select the "Basic kanban" template option(`TODO`, `In Progress`, `Done` columns). Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). Don't forget to update the workshop task to Done whenever you finish!
+On your workshop GitHub repository (`https://github.com/<your-username>/Basics`), navigate to the **Projects** tab to create a new GitHub Projects board. Follow the instructions to add a project to your repository and select the "Kanban" template option:
+
+* `Backlog`: tasks that have not been started
+* `Ready`: tasks ready to start
+* `In Progress`: tasks actively being worked on
+* `In Review`: tasks currently being reviewed
+* `Done`: completed tasks
+
+Once your project board is created, create cards to represent upcoming tasks related to this class including this workshop, HW0, finding a project group, and any more you can think of. Move the tasks to the appropriate column (i.e. this workshop is _In Progress_). To submit, please set your project visibility to Public or add a screenshot of your board (`kanban.png`) to your Basics repository. Don't forget to update the workshop task to Done whenever you finish!
 
 ## Scrum
 
@@ -70,5 +78,5 @@ The main things covered in a scrum:
 
 ## 📝 Activity: Scrum Meeting
 
-Find 1 or 2 other students in class to complete a stand-up meeting. You should stand up together to answer the three questions above about the tasks you added to your Kanban board in the previous activity. If you are not able to do this in class, you may complete the stand-up virtually. In your SE Basics repository, add a file named `standup.txt` with the name(s) and email IDs of the students you completed the stand-up meeting along with and a summary of responses.
+Find 1 or 2 other students in class to complete a stand-up meeting. You should stand up together to answer the three questions above about the tasks you added to your Kanban board in the previous activity. If you are not able to do this in class, you may complete the stand-up individually. In your SE Basics repository, add a file named `standup.txt` with the name(s) and email IDs of the students you completed the stand-up meeting along with and a summary of responses.
 

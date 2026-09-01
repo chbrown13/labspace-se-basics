@@ -22,7 +22,7 @@ There has to be a better way!
 
 ## Understanding Git
 
-What better way to understand git than to check out git itself! This will take a while...(if necessary, run this locally)
+What better way to understand git than to explore git itself! Use the following command to clone the repository (This might take a while...)
 
 ```bash no-run-button
 git clone https://github.com/git/git
@@ -153,7 +153,7 @@ Use `git branch` to see the current branch and `git branch -a` to view a list of
 * Change `HEAD` to point to a new branch.
 * Updates the working directory to match the commit's tree.
 
-We can switch our branch to the maintenance branch.
+We can switch our branch to the [_"What's cooking"_](https://github.com/git/git/tree/todo) branch.
 ```bash no-run-button
 git switch todo
 ```
@@ -170,7 +170,7 @@ We can return to the main branch and go back to the labspace project directory.
 git switch master && cd ..
 ```
 
-## 📝 Activity: Creating a Repo
+## 📝 Activity: Creating a Local Repo
 
 Let's try the basics. A repository (repo) is where the backup (master) copies of all files are stored.
 – **Local repository:** on your computer
@@ -180,9 +180,8 @@ Let's create a new local git repository.
 
 Create a new directory (Basics) and file (README.md).
 
-```save-as=README.md
-# CS3704 SE Basics Workshop
-Hello!
+```bash
+mkdir Basics && echo "# CS3704 SE Basics Workshop" >> Basics/README.md
 ```
 
 We are going to create a new git repository, but maybe not the way you've done it before. 
@@ -281,7 +280,7 @@ Now let's push the local repository you created earlier to make it a remote repo
 
 1. Create a new repository on GitHub (https://github.com account is needed). Name your repository Basics and set a description to be something about "CS3704 Software Engineering Basics Workshop". Skip the initialization steps and create your repo.
 
-2. Follow the instructions to add a remote url to an existing git repository (**push an existing repository from the command line**). It should start with something like: `git remote add origin https://github.com/<usernamei>/Basics.git` and include `git push -u origin main`.
+2. Follow the instructions to add a remote url to an existing git repository (**push an existing repository from the command line**). It should start with something like: `git remote add origin https://github.com/<username>/Basics.git` and include `git push -u origin main`.
 
 3. Push your changes to GitHub. Verify you can see your updated README.md! The labspace will ask you to verify your GitHub account through the browser, please follow the instructions to approve.
 

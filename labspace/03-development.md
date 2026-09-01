@@ -4,8 +4,7 @@
 
 A shell is a computing environment where commands can be interpreted, evaluated, and its output displayed (_i.e._, an instance of a read–eval–print loop (REPL, see below)). A good shell provides access to a rich set of commands and allows simple programming of commands, which can be used to create powerful scripts and tools.
 
-**But with great power comes great responsibility**. Commands and their options can be [terse, inconsistent, and difficult to learn](http://www.pgbovine.net/command-line-bullshittery.htm). A steep learning curve often prevents novices from enjoying the eventual payoff. If you've hardly used a command line environment before, you might want to go review this more thorough tutorial:
-[software carpentry: shell-novice](http://swcarpentry.github.io/shell-novice/index.html)---this page is more of a discussion of common tasks and mistakes, advanced topics, and resources.
+**But with great power comes great responsibility**. Commands and their options can be [terse, inconsistent, and difficult to learn](https://aws.plainenglish.io/why-learning-linux-is-so-frustrating-and-how-to-make-it-easy-a1f2c8d6a5cd). A steep learning curve often prevents novices from enjoying the eventual payoff. If you've hardly used a command line environment before, you might want to go review this more thorough tutorial: [software carpentry: shell-novice](http://swcarpentry.github.io/shell-novice/index.html)---this page is more of a discussion of common tasks and mistakes, advanced topics, and resources.
 
 You may also want to reference the online book, [the Unix Workbench](https://seankross.com/the-unix-workbench/).
 
@@ -13,15 +12,8 @@ You may also want to reference the online book, [the Unix Workbench](https://sea
 
 Depending on your operating system and desktop manager, you have many ways to open up a shell. There may even be several different choices for shell programs.
 
-### Accessing and Using Shells on Your Machine
+> *Tip*: This labspace is based in a Linux shell in your browser. For more details on using a shell environment on your own machine, see [Appendix A](#appendix-a-shells-outside-the-labspace).
 
-**Mac**: you can run the Terminal in Applications and pin to your Dock.
-
-**Windows**: You access a shell in several ways. You can right click on the Windows Icon in the Task Bar and open a terminal window. You can also type in the name of the shell program in the search bar (e.g., Cmd/Powershell). In windows, you can use Cmd, Powershell, or emulated shells, such as Bash for Git, or Bash with [Windows Linux Subsystem (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about). `Cmd` is tried and true, and if you [make windows awesome](setup/configure-shell.md), will mostly what you want to do. The downsides are that interactions such as copy/paste are a little clunky. However, if you open up a terminal with Cmd through Code, then this problem is mostly eliminated. `Powershell` is a powerful shell, with great scripting support. However, the syntax is esoteric and inconsistent with any other shell you may use. For example, running common linux commands like `cd ~ && ls` does not work in Powershell. 
-
-Enumlated shells are useful for getting a _linux-like_ experience in Windows. Unfortunately, there are **many downsides to using emulated shells**. One downside is that you may be limited in accessing other executables/environments on windows. For example, with `WSL`, you are actually running commands inside a small virtual machine, which limits your ability to run commands from windows. In general, using `WSL`, will turn on Hyper-V, which essentially breaks virtualization for tools, such as VirtualBox. In `Git Bash`, node packages and environment settings you setup will not work as expected when running in Cmd/etc. Furthermore, you never truly escape Windows, for example, Windows style newline endings `'\r\n'` may exist in files you edit, which will break bash scripts. Another common problem is that when you install packages, you will often get libraries for linux binaries, which then will not work when running outside of the emulated shell. As a result, emulated shells seem helpful, but often create more problems than they solve.
-
-> *Tip*: IDES, such as VS Code provide easy access to a terminal (View ⇨ Terminal).
 
 ### Commands
 
@@ -112,7 +104,7 @@ node
 console.log("Hello CS3704!");
 ```
 
-4. This should print the `Hello World!` message to the console (in addition, you may see an `undefined` message indicating the `console.log` function returns **`null`**.
+4. This should print the `Hello CS3704!` message to the console (in addition, you may see an `undefined` message indicating the `console.log` function returns **`undefined`**.
 
 
 5. The command below will create a function `add` that adds two numbers input as parameters:
@@ -150,7 +142,7 @@ vi
 
 3. Press "i" to enter Insert Mode. 
 4. Once in Insert mode, you can type and navigate as you would in a normal text editor. To use print statements in JavaScript, you would use the `console.log(" ");` command. Add a line to this document that prints out a relevant message (i.e., "Practicing using vi") in the file.
-5. To exit, press **Esc** then type `:wq practice.js` to save the file under the filename README.md and exit. Congrats---you successfully exited vi! 🎉 To run the file in the terminal, use the following command:
+5. To exit, press **Esc** then type `:wq practice.js` to save the file under the filename `practice.js` and exit. Congrats---you successfully exited vi! 🎉 To run the file in the terminal, use the following command:
 
 ```bash no-run-button
 node practice.js
@@ -193,3 +185,28 @@ cat reflection.txt
 | **Undo** | `u` |
 | **Save & Quit** | `:wq` |
 | **Quit without Saving** | `:q!` |
+
+---
+
+## Appendix A: Shells Outside the Labspace
+
+> You don't need any of this to complete the workshop — everything below is for when you're working on your own machine instead of in this container.
+
+### Accessing and Using Shells
+
+* **Mac**: you can run the Terminal in Applications and pin to your Dock.
+
+* **Windows**: You access a shell in several ways. You can right click on the Windows Icon in the Task Bar and open a terminal window. You can also type in the name of the shell program in the search bar (e.g., Cmd/Powershell). 
+
+> *Tip*: IDES, such as VS Code provide easy access to a terminal (View ⇨ Terminal).
+
+### Deciding on a Terminal/Shell for Windows
+
+In windows, you can use Cmd, Powershell, or emulated shells, such as Bash for Git, or Bash with [Windows Linux Subsystem (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about). 
+
+`Cmd` is tried and true, and if you [made windows awesome](setup/configure-shell.md), will mostly what you want to do. The downsides are that interactions such as copy/paste are a little clunky. However, if open up a terminal with Cmd through Code, then this problem is mostly eliminated. `Powershell` is a powerful shell, with great scripting support. However, the syntax is esoteric and inconsistent with any other shell you may use. For example, running common linux commands like `cd ~ && ls` does not work in Powershell.
+
+Enumlated shells are useful for getting a _linux-like_ experience in Windows. Unfortunately, there are **many downsides to using emulated shells**. One downside is that you may be limited in accessing other executables/environments on windows. 
+For example, with `WSL`, you are actually running commands inside a small virtual machine, which limits your ability to run commands from windows. In general, using `WSL`, will turn on Hyper-V, which essentially breaks virtualization for tools, such as VirtualBox. In `Git Bash`, node packages and environment settings you setup will not work as expected when running in Cmd/etc. Furthermore, you never truly escape Windows, for example, Windows style newline endings `'\r\n'` may exist in files you edit, which will break bash scripts. Another common problem is that when you install packages, you will often get libraries for linux binaries, which then will not work when running outside of the emulated shell.
+
+As a result, emulated shells seem helpful, but often create more problems than they solve.
