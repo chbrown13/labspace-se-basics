@@ -54,8 +54,6 @@ Before the modern coding editors and cloud-based IDES, software engineers wrote 
 
 <img src="/images/vi2.png" width="400" height="400" />
 
-Vi/vim is also universally available across Linux environments, allowing for rapid troubleshooting and editing of files in environments where no UI or IDE are present (i.e., when you `ssh` into a server or virtual machine).
-
 ## 📝 Activity
 
  Complete the following activities to practice using the vi coding environment. A brief reference guide is also provided at the bottom of this document.
