@@ -11,6 +11,6 @@
 
 ## Next Steps
 
-- To receive credit, please make sure all of your workshop documents are pushed to the GitHub repository created for this workshop and submit the GitHub link created on Canvas.
+- To receive credit, please make sure all of your workshop documents are pushed to the GitHub repository created for this workshop and submit the GitHub link to the Canvas assignment.
 
 🎉 Well done!

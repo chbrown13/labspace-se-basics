@@ -15,9 +15,9 @@ Depending on your operating system and desktop manager, you have many ways to op
 
 ### Accessing and Using Shells on Your Machine
 
-* **Mac**: you can run the Terminal in Applications and pin to your Dock.
+**Mac**: you can run the Terminal in Applications and pin to your Dock.
 
-* **Windows**: You access a shell in several ways. You can right click on the Windows Icon in the Task Bar and open a terminal window. You can also type in the name of the shell program in the search bar (e.g., Cmd/Powershell). In windows, you can use Cmd, Powershell, or emulated shells, such as Bash for Git, or Bash with [Windows Linux Subsystem (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about). `Cmd` is tried and true, and if you [make windows awesome](setup/configure-shell.md), will mostly what you want to do. The downsides are that interactions such as copy/paste are a little clunky. However, if you open up a terminal with Cmd through Code, then this problem is mostly eliminated. `Powershell` is a powerful shell, with great scripting support. However, the syntax is esoteric and inconsistent with any other shell you may use. For example, running common linux commands like `cd ~ && ls` does not work in Powershell. 
+**Windows**: You access a shell in several ways. You can right click on the Windows Icon in the Task Bar and open a terminal window. You can also type in the name of the shell program in the search bar (e.g., Cmd/Powershell). In windows, you can use Cmd, Powershell, or emulated shells, such as Bash for Git, or Bash with [Windows Linux Subsystem (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about). `Cmd` is tried and true, and if you [make windows awesome](setup/configure-shell.md), will mostly what you want to do. The downsides are that interactions such as copy/paste are a little clunky. However, if you open up a terminal with Cmd through Code, then this problem is mostly eliminated. `Powershell` is a powerful shell, with great scripting support. However, the syntax is esoteric and inconsistent with any other shell you may use. For example, running common linux commands like `cd ~ && ls` does not work in Powershell. 
 
 Enumlated shells are useful for getting a _linux-like_ experience in Windows. Unfortunately, there are **many downsides to using emulated shells**. One downside is that you may be limited in accessing other executables/environments on windows. For example, with `WSL`, you are actually running commands inside a small virtual machine, which limits your ability to run commands from windows. In general, using `WSL`, will turn on Hyper-V, which essentially breaks virtualization for tools, such as VirtualBox. In `Git Bash`, node packages and environment settings you setup will not work as expected when running in Cmd/etc. Furthermore, you never truly escape Windows, for example, Windows style newline endings `'\r\n'` may exist in files you edit, which will break bash scripts. Another common problem is that when you install packages, you will often get libraries for linux binaries, which then will not work when running outside of the emulated shell. As a result, emulated shells seem helpful, but often create more problems than they solve.
 
@@ -25,7 +25,7 @@ Enumlated shells are useful for getting a _linux-like_ experience in Windows. Un
 
 ### Commands
 
-99% of the reason you use shells is to run useful commands. Some basic commands, including several used throughout this workshop, are provided below:
+99% of the reason you use shells is to run useful commands. Some useful commands, including several used throughout this workshop, are provided below:
 
 ##### Essential commands
 
@@ -48,7 +48,7 @@ Enumlated shells are useful for getting a _linux-like_ experience in Windows. Un
 
 Command can run sequentially or conditionally:
 
-```bash
+```bash no-run-button
 command1 ; command2
 (command1 ; command2) # in a sub-shell
 command1 || command2  # do command2 only if command1 fails
@@ -93,7 +93,7 @@ There are 4 components to REPL environments:
     * _Read_ reads in input from the keyboard
     * _Eval_ evaluates code passed to it
     * _Print_ formats and displays the output
-    * _Loop_ continues read/eval/print until the REPL is terminated
+    * _Loop_ continues until the REPL is terminated
 
 ## 📝 Activity
 

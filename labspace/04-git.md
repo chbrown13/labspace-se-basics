@@ -295,5 +295,5 @@ git pull
 
 6. Invite the instructor (chbrown13) to be a collaborator to your repository (`Settings -> Manage access`).
 
-7. **This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities (from the terminal in the Basics directory, run `cp ../fizzbuzz.<ext> ../practice.js ../reflection.txt ../git.txt .` to copy the files to your repo directory. There is nothing to submit for the REPL activity). In addition, make sure the README contains your name and PID. Stage, commit, and push your changes!**
+7. **This repository is where you will place all the materials to submit the workshop today. Add your FizzBuzz program, `practice.js`, `reflection.txt`, and `git.txt` from the previous activities (from the terminal in the Basics directory, run `cp ../fizzbuzz.<ext> ../shells-test.txt ../practice.js ../reflection.txt ../git.txt .` to copy the files to your repo directory. There is nothing to submit for the REPL activity). In addition, make sure the README contains your name and PID. Stage, commit, and push your changes!**
 
