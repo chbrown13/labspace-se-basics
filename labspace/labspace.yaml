@@ -12,13 +12,11 @@ sections:
     contentPath: 01-introduction.md
   - title: Coding
     contentPath: 02-coding.md
-  - title: Shell Environments
-    contentPath: 03-shells.md
   - title: Development Environments
-    contentPath: 04-development.md
+    contentPath: 03-development.md
   - title: Version Control
-    contentPath: 05-git.md
+    contentPath: 04-git.md
   - title: Task Management
-    contentPath: 06-tasks.md
+    contentPath: 05-tasks.md
   - title: Conclusion
-    contentPath: 07-conclusion.md
+    contentPath: 06-conclusion.md

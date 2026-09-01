@@ -1,4 +1,84 @@
-# Integrated Development Environments
+# Development Environments
+
+## Shells
+
+A shell is a computing environment where commands can be interpreted, evaluated, and its output displayed (_i.e._, an instance of a read–eval–print loop (REPL, see below)). A good shell provides access to a rich set of commands and allows simple programming of commands, which can be used to create powerful scripts and tools.
+
+**But with great power comes great responsibility**. Commands and their options can be [terse, inconsistent, and difficult to learn](http://www.pgbovine.net/command-line-bullshittery.htm). A steep learning curve often prevents novices from enjoying the eventual payoff. If you've hardly used a command line environment before, you might want to go review this more thorough tutorial:
+[software carpentry: shell-novice](http://swcarpentry.github.io/shell-novice/index.html)---this page is more of a discussion of common tasks and mistakes, advanced topics, and resources.
+
+You may also want to reference the online book, [the Unix Workbench](https://seankross.com/the-unix-workbench/).
+
+### Shell Basics
+
+Depending on your operating system and desktop manager, you have many ways to open up a shell. There may even be several different choices for shell programs.
+
+### Accessing and Using Shells on Your Machine
+
+* **Mac**: you can run the Terminal in Applications and pin to your Dock.
+
+* **Windows**: You access a shell in several ways. You can right click on the Windows Icon in the Task Bar and open a terminal window. You can also type in the name of the shell program in the search bar (e.g., Cmd/Powershell). In windows, you can use Cmd, Powershell, or emulated shells, such as Bash for Git, or Bash with [Windows Linux Subsystem (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about). `Cmd` is tried and true, and if you [make windows awesome](setup/configure-shell.md), will mostly what you want to do. The downsides are that interactions such as copy/paste are a little clunky. However, if you open up a terminal with Cmd through Code, then this problem is mostly eliminated. `Powershell` is a powerful shell, with great scripting support. However, the syntax is esoteric and inconsistent with any other shell you may use. For example, running common linux commands like `cd ~ && ls` does not work in Powershell. 
+
+Enumlated shells are useful for getting a _linux-like_ experience in Windows. Unfortunately, there are **many downsides to using emulated shells**. One downside is that you may be limited in accessing other executables/environments on windows. For example, with `WSL`, you are actually running commands inside a small virtual machine, which limits your ability to run commands from windows. In general, using `WSL`, will turn on Hyper-V, which essentially breaks virtualization for tools, such as VirtualBox. In `Git Bash`, node packages and environment settings you setup will not work as expected when running in Cmd/etc. Furthermore, you never truly escape Windows, for example, Windows style newline endings `'\r\n'` may exist in files you edit, which will break bash scripts. Another common problem is that when you install packages, you will often get libraries for linux binaries, which then will not work when running outside of the emulated shell. As a result, emulated shells seem helpful, but often create more problems than they solve.
+
+> *Tip*: IDES, such as VS Code provide easy access to a terminal (View ⇨ Terminal).
+
+### Commands
+
+99% of the reason you use shells is to run useful commands. Some basic commands, including several used throughout this workshop, are provided below:
+
+##### Essential commands
+
+* **`ls`**: list content of a directory.
+* **`cd`**: change directories to a new path.
+* **`mkdir`**: make a new directory.
+* **`pwd`**: output current directory
+* **`cp`**: copy files
+* **`rm`**: rm files
+* **`touch`**: make a new file/update status**
+* **`cat`**: output the contents of a file.
+* **`head`**: output the first lines of a file.
+* **`tail`**: output the last lines of a file.
+* **`grep`**: search files for a key phrase.
+* **`wget`**: retrieve file from the web.
+* **`cut`**: extract output of a file (columns)
+* **`awk`** and **`sed`**: Magic commands for extracting, searching, and transforming content.
+
+##### Combining commands
+
+Command can run sequentially or conditionally:
+
+```bash
+command1 ; command2
+(command1 ; command2) # in a sub-shell
+command1 || command2  # do command2 only if command1 fails
+command1 && command2  # do command2 only if command1 succeeds
+```
+
+## 📝 Activity
+
+Complete the following to try using shell commands in the VS Code terminal for this labspace:
+
+Try running this command that combines these shell commands.
+
+```bash
+echo "Hello World" > shells-test.txt && cat shells-test.txt
+```
+
+Now, try using the `||` operator. 
+
+```bash
+cat shells-test.txt || echo "backup plan"
+```
+
+See what happens in this case.
+
+```bash
+cat filedoesnotexist.txt || echo "backup plan"
+```
+
+
+## Integrated Development Environments
 
 Integrated Development Environments (IDEs) enable software engineers to complete various activities related to writing a computer program. IDEs often provide a variety of features to support software development, including syntax highlighting, autocomplete, static analysis tools, debugging functionality, refactoring, multiple language support, integrations with git, code searching, and more...
 
